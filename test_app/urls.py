@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import CreateUserAPIView,GetUserAPIView,GetAllUserAPIView,DeleteUserAPIView,UpdateUserAPIView
+from views import CreateUserAPIView,GetUserAPIView,GetAllUserAPIView,DeleteUserAPIView,UpdateUserAPIView
 
 urlpatterns = [
     path('user/create',CreateUserAPIView.as_view(),name="An API that creates a user"),
